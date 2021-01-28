@@ -141,33 +141,36 @@ body {
 
 @media (max-width: 800px) {
     .section-main {
-        height: 600px;
+        height: 80vh ;
     }
     .box {
-        margin-top: 100px;
+        margin-top: -50px;
       flex-direction: column;
     }
     h1, h2 {
-        font-size-adjust: medium;
     }
   }
 
   @media (max-width: 600px) {
+    html { font-size: 70%; }
+    .section-main {
+        height: 60vh ;
+    }
     .box {
+        margin-top: -100px;
         max-width: 350px;
-        padding-top: 0;
+    }
+    .section-main{
+        padding: 30px;
     }
     .svg-hero img {
-        height: 100px;
+        height: 200px;
     }
   }
   @media (max-width: 300px) {
-    html { font-size: 70%; }
+    html { font-size: 60%; }
 }
 
-@media (min-width: 500px) {
-    html { font-size: 80%; }
-}
 
 
 
