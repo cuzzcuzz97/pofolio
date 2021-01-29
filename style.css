@@ -9,6 +9,7 @@
 body {
     font-family: 'montserrat', Courier, monospace;
     height: 1000px;
+    font-size: 100%;
 }
 
 .nav-bar {
@@ -198,7 +199,7 @@ body {
   */
   
   @media (max-width: 1024px) {
-          
+
     .box {
         display: flex;
         flex-direction: column;
