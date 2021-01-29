@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-
+body {
+    position: absolute;
+   }
 * {
     margin: 0;
     padding: 0;
@@ -248,10 +250,11 @@ body {
 
 .footer {
     margin-top: 250px;
-    display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
+    align-items: center;
+
 }
 .footer .contact-info {
     padding: 100px;
@@ -262,6 +265,7 @@ body {
 
 .contact-info li {
     list-style: none;
+    width: 100%;
 }
 
 .copyright {
