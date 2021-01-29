@@ -124,8 +124,8 @@ body {
 
 }
 .box {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     background-color: white;
     padding: 0;
     margin: 0 5%;
@@ -142,26 +142,24 @@ body {
 
 .section-skills .column {
     padding: 65px 35px;
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex: 1 1 0px;
     justify-content: center;
     max-width: 500px;
 }
 .section-skills .column .title {
     font-size: 2rem;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 .section-skills .column:nth-child(2) {
-    border: 2px solid #E6ECF8;
-
+    transform: translateY(-3%)
 }
 
 .column li {
     list-style: none;
+}
+
+.icon img {
+    height: 100px;
 }
 
 .title-skills {
@@ -172,36 +170,59 @@ body {
    padding-top: 10px; 
 }
 
+@media (min-width: 1281px) {
 
-@media (max-width: 800px) {
-    .section-main {
-        height: 80vh ;
-    }
-    .box {
-        margin-top: -50px;
-      flex-direction: column;
-    }
-    h1, h2 {
-    }
+
+    
   }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
 
-  @media (max-width: 600px) {
-    html { font-size: 70%; }
-    .section-main {
-        height: 60vh ;
-    }
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (max-width: 1024px) {
+          
     .box {
-        margin-top: -100px;
-        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        align-items: center;
     }
-    .section-main{
-        padding: 30px;
+    .box .column {
+        border-bottom: 1px solid #6125c1;
     }
     .svg-hero img {
-        height: 200px;
+        height: 100%;
+        width: 100%;
     }
+    /* CSS */
+
   }
-  @media (max-width: 300px) {
-    html { font-size: 60%; }
-}
+
+  @media (max-width: 900px) {
+          
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+        align-items: center;
+
+    /* CSS */
+
+  }
+    .section-main {
+        padding: 20px;
+    }
 
