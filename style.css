@@ -215,15 +215,19 @@ body {
          width: 150px;
          margin: 0 1.5rem 1.5rem 0;
          display: inline-block;
-
          width: 100%;
          border: solid 2px black;
             padding: 5px;
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            
          border-radius: 5px;
-          transition: all .25s ease-in-out;
+          transition: all    .25s ease-in-out;
     
 }
+
+.grid-container div:hover {
+    transform: scale(1.1);
+}
+
 .grid-container img {
         width: 100%;
         border-radius: 5px;
@@ -234,7 +238,7 @@ body {
         filter: grayscale(10%);
         transition: all .25s ease-in-out;
 }
-.grid-item:hover {
+.grid-item:hover ,  {
         filter: grayscale(0%);
         transform: scale(1.1);
         transition: all .25s ease-in-out;
